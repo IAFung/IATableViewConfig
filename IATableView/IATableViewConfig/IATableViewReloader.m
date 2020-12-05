@@ -19,9 +19,11 @@
     __block NSIndexPath *indexPath = nil;
     if (vc.dataList.count > 0 && [vc.dataList.firstObject isKindOfClass:NSArray.class]) {
         [vc.dataList enumerateObjectsUsingBlock:^(NSArray *object, NSUInteger section, BOOL *stop) {
-            [object enumerateObjectsUsingBlock:^(IACellConfig *dto, NSUInteger index, BOOL *stop) {
+            [object enumerateObjectsUsingBlock:^(IACellConfig *dto, NSUInteger index, BOOL *stop1) {
                 if (config == dto) {
                     indexPath = [NSIndexPath indexPathForRow:index inSection:section];
+                    *stop1 = YES;
+                    *stop = YES;
                 }
             }];
         }];
@@ -29,6 +31,7 @@
     [vc.dataList enumerateObjectsUsingBlock:^(id object, NSUInteger index, BOOL *stop) {
         if (config == object) {
             indexPath = [NSIndexPath indexPathForRow:index inSection:0];
+            *stop = YES;
         }
     }];
     if (indexPath) {
