@@ -22,6 +22,7 @@
                 [IACellConfig noNibConfigWithClass:@"IABaseTableViewCell" model:[IABlankModel modelWithColor:UIColor.redColor height:10 leftPadding:10 rightPadding:0]],
                 [IACellConfig configWithClass:@"M80FeedTextCell" isNib:NO model:object],
                 [IACellConfig noNibConfigWithClass:@"IABaseTableViewCell" model:[IABlankModel modelWithColor:UIColor.lightGrayColor height:1 leftPadding:15 rightPadding:15]],
+                [IACellConfig configWithClass:@"StackTableViewCell" isNib:YES model:object],
                 [IACellConfig configWithClass:@"M80FeedImageCell" isNib:NO model:object],
                 [IACellConfig configWithClass:@"M80FeedToolbarViewCell" isNib:YES model:object],
                 [IACellConfig noNibConfigWithClass:@"IABaseTableViewCell" model:[IABlankModel modelWithColor:UIColor.blueColor height:50]],

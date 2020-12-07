@@ -62,8 +62,10 @@
         [invocation invoke];
         CGFloat height;
         [invocation getReturnValue:&height];
-        if ([(id<IATableViewCellProtocol>)cell usingCache]) {
-            config.cachedHeight = height;
+        if (![(id<IATableViewCellProtocol>)cell respondsToSelector:@selector(setCellConfig:)]) {
+            if ([(id<IATableViewCellProtocol>)cell usingCache]) {
+                config.cachedHeight = height;
+            }
         }
         return height;
     }
@@ -165,8 +167,10 @@
     if (self.tableView.separatorStyle != UITableViewCellSeparatorStyleNone) {
         fittingHeight += 1.0 / [UIScreen mainScreen].scale;
     }
-    if ([(id<IATableViewCellProtocol>)cell usingCache]) {
-        config.cachedHeight = fittingHeight;
+    if (![(id<IATableViewCellProtocol>)cell respondsToSelector:@selector(setCellConfig:)]) {
+        if ([(id<IATableViewCellProtocol>)cell usingCache]) {
+            config.cachedHeight = fittingHeight;
+        }
     }
     return fittingHeight;
 }

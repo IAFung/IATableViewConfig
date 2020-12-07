@@ -15,7 +15,9 @@ NS_ASSUME_NONNULL_BEGIN
 - (CGFloat)cellHeightByConfig:(IACellConfig *)config;
 - (BOOL)autoCalculateHeight;
 @optional
+///cell展开关闭时从此代理获取config,并在展开关闭事件时改变config.changedHeight属性
 - (void)setCellConfig:(IACellConfig *)config;
+//关闭高度缓存
 - (BOOL)usingCache;
 @end
 

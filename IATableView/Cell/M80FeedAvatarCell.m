@@ -50,7 +50,4 @@
 - (void)setCellConfig:(IACellConfig *)config {
     _config = config;
 }
-- (BOOL)usingCache{
-    return NO;
-}
 @end
