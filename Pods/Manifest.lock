@@ -1,0 +1,29 @@
+PODS:
+  - IATableViewConfig (0.1.0)
+  - Masonry (1.1.0)
+  - SDWebImage (5.9.4):
+    - SDWebImage/Core (= 5.9.4)
+  - SDWebImage/Core (5.9.4)
+
+DEPENDENCIES:
+  - IATableViewConfig (from `IATableViewConfig`)
+  - Masonry
+  - SDWebImage
+
+SPEC REPOS:
+  trunk:
+    - Masonry
+    - SDWebImage
+
+EXTERNAL SOURCES:
+  IATableViewConfig:
+    :path: IATableViewConfig
+
+SPEC CHECKSUMS:
+  IATableViewConfig: 14773b2e3775f5474a5e274b57e879ba578190a2
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  SDWebImage: b69257f4ab14e9b6a2ef53e910fdf914d8f757c1
+
+PODFILE CHECKSUM: 77a0778acae01028d79922951920e458d4f6de02
+
+COCOAPODS: 1.10.0

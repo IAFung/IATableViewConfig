@@ -1,0 +1,6 @@
+framework module IATableViewConfig {
+  umbrella header "IATableViewConfig-umbrella.h"
+
+  export *
+  module * { export * }
+}

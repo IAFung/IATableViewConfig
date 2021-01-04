@@ -1,0 +1,6 @@
+framework module Pods_IATableView {
+  umbrella header "Pods-IATableView-umbrella.h"
+
+  export *
+  module * { export * }
+}

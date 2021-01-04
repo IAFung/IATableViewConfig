@@ -5,8 +5,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "IACellConfig.h"
-#import "IATableViewCellProtocol.h"
+#import <IATableViewConfig/IATableViewConfig.h>
 @interface IABaseTableViewCell : UITableViewCell<IATableViewCellProtocol>
 - (void)initSubviews;
 @end

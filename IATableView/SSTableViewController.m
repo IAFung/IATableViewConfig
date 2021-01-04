@@ -7,11 +7,9 @@
 
 #import "SSTableViewController.h"
 #import "M80FeedMocker.h"
-#import "IACellConfig.h"
 #import "NSArray+IAAddition.h"
-#import "IACellManager.h"
-#import "IABlankModel.h"
 #import "IABaseTableViewCell.h"
+#import <IATableViewConfig/IATableViewConfig.h>
 @implementation SSTableViewController
 - (void)viewDidLoad {
     [super viewDidLoad];

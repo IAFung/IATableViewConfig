@@ -13,6 +13,7 @@
 #import "IATableViewController.h"
 #import "NSArray+IAAddition.h"
 #import "IATableViewReloader.h"
+#import <SDWebImage/SDWebImage.h>
 @implementation M80FeedAvatarCell {
     IACellConfig *_config;
 }
@@ -30,7 +31,7 @@
 {
     self.nameLabel.text = feed.username;
     self.infoLabel.text = feed.createAt;
-    [self.avatarImageView setImage:[UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:feed.avatarURLString]]]];
+    [self.avatarImageView sd_setImageWithURL:[NSURL URLWithString:feed.avatarURLString]];
 }
 //- (BOOL)autoCalculateHeight{
 //    return NO;

@@ -50,7 +50,7 @@ tableView cell点击事件响应:
    }
    ```
 
-2. autoCalculateHeight返回YES. 这种情况需要添加好约束,且高度要指定出来,
+2. autoCalculateHeight返回YES. 这种情况需要添加好约束,且约束高度要指定出来,
 
    ```objective-c
    - (BOOL)autoCalculateHeight {

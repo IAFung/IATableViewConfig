@@ -8,6 +8,7 @@
 
 #import "M80FeedImageCell.h"
 #import "M80Feed.h"
+#import <SDWebImage/SDWebImage.h>
 
 #define M80OneImageRatio (0.618)
 #define M80OtherImageRatio (0.309)
@@ -54,8 +55,7 @@
     {
         UIImageView *imageView = self.imageViews[i];
         NSURL *url = [NSURL URLWithString:urls[i]];
-//        [imageView yy_setImageWithURL:url placeholder:nil];
-        [imageView setImage:[UIImage imageWithData:[NSData dataWithContentsOfURL:url]]];
+        [imageView sd_setImageWithURL:url];
         [imageView setHidden:NO];
     }
     

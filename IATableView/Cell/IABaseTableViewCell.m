@@ -5,7 +5,6 @@
 //
 
 #import "IABaseTableViewCell.h"
-#import "IABlankModel.h"
 @implementation IABaseTableViewCell {
     UIView *blankView;
     IABlankModel *_model;

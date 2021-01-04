@@ -1,0 +1,4 @@
+${PODS_ROOT}/Target Support Files/Pods-IATableView/Pods-IATableView-frameworks.sh
+${BUILT_PRODUCTS_DIR}/IATableViewConfig/IATableViewConfig.framework
+${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework
+${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework
