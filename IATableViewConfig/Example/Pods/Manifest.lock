@@ -1,0 +1,16 @@
+PODS:
+  - IATableViewConfig (0.1.0)
+
+DEPENDENCIES:
+  - IATableViewConfig (from `../`)
+
+EXTERNAL SOURCES:
+  IATableViewConfig:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  IATableViewConfig: 14773b2e3775f5474a5e274b57e879ba578190a2
+
+PODFILE CHECKSUM: 58600b5e57fea6da71d966a148018c798e9ccc48
+
+COCOAPODS: 1.10.0

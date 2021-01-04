@@ -1,0 +1,6 @@
+framework module Pods_IATableViewConfig_Tests {
+  umbrella header "Pods-IATableViewConfig_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

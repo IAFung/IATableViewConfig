@@ -1,0 +1,6 @@
+use_frameworks!
+target 'IATableViewConfig_Tests' do
+  pod 'IATableViewConfig', :path => '../'
+  
+  
+end
