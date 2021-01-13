@@ -17,17 +17,20 @@
         }
     }
     if (!window) {
-        UIWindowScene *scene;
-        for (UIWindowScene *_scene in [UIApplication  sharedApplication].connectedScenes) {
-            if (_scene.activationState == UISceneActivationStateForegroundActive) {
-                scene = _scene;
+        if (@available(iOS 13.0, *)) {
+            UIWindowScene *scene;
+            for (UIWindowScene *_scene in [UIApplication sharedApplication].connectedScenes) {
+                if (_scene.activationState == UISceneActivationStateForegroundActive) {
+                    scene = _scene;
+                }
             }
-        }
-        UIWindow *window;
-        for (UIWindow *_window in scene.windows) {
-            if (_window.isKeyWindow) {
-                window = _window;
+            for (UIWindow *_window in scene.windows) {
+                if (_window.isKeyWindow) {
+                    window = _window;
+                }
             }
+        } else {
+            return nil;
         }
     }
     return [self topViewControllerWithRootViewController:window.rootViewController];

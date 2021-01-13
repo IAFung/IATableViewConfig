@@ -37,6 +37,7 @@
 		B2600C6F257B3C98008DEEE7 /* SSTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2600C6E257B3C98008DEEE7 /* SSTableViewController.m */; };
 		B2ECBAF9257DD2FD00F25DD1 /* StackTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B2ECBAF7257DD2FD00F25DD1 /* StackTableViewCell.m */; };
 		B2ECBAFA257DD2FD00F25DD1 /* StackTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2ECBAF8257DD2FD00F25DD1 /* StackTableViewCell.xib */; };
+		B2F631AB25AEF333007E627E /* IACellConfig+Line.m in Sources */ = {isa = PBXBuildFile; fileRef = B2F631AA25AEF333007E627E /* IACellConfig+Line.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -88,6 +89,8 @@
 		B2ECBAF6257DD2FD00F25DD1 /* StackTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StackTableViewCell.h; sourceTree = "<group>"; };
 		B2ECBAF7257DD2FD00F25DD1 /* StackTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StackTableViewCell.m; sourceTree = "<group>"; };
 		B2ECBAF8257DD2FD00F25DD1 /* StackTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StackTableViewCell.xib; sourceTree = "<group>"; };
+		B2F631A925AEF333007E627E /* IACellConfig+Line.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "IACellConfig+Line.h"; sourceTree = "<group>"; };
+		B2F631AA25AEF333007E627E /* IACellConfig+Line.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "IACellConfig+Line.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +142,8 @@
 				B2600B312579CE53008DEEE7 /* SceneDelegate.m */,
 				B2600B332579CE53008DEEE7 /* ViewController.h */,
 				B2600B342579CE53008DEEE7 /* ViewController.m */,
+				B2F631A925AEF333007E627E /* IACellConfig+Line.h */,
+				B2F631AA25AEF333007E627E /* IACellConfig+Line.m */,
 				B2600B922579DA9B008DEEE7 /* Cell */,
 				B2600B802579DA8F008DEEE7 /* APIDump */,
 				B2600B752579DA84008DEEE7 /* Model */,
@@ -338,6 +343,7 @@
 			files = (
 				B2ECBAF9257DD2FD00F25DD1 /* StackTableViewCell.m in Sources */,
 				B2600B9D2579DA9B008DEEE7 /* M80FeedImageCell.m in Sources */,
+				B2F631AB25AEF333007E627E /* IACellConfig+Line.m in Sources */,
 				B2600B352579CE53008DEEE7 /* ViewController.m in Sources */,
 				B2600BA02579DA9B008DEEE7 /* M80FeedToolbarViewCell.m in Sources */,
 				B2600B2F2579CE53008DEEE7 /* AppDelegate.m in Sources */,
